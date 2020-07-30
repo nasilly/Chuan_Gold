@@ -1,0 +1,239 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nasilly.chuan_gold"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.nasilly.chuan_gold.ApplicationActivity"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.nasilly.chuan_gold.activity.Activity_Launch"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Main"
+            android:label="主界面"
+            android:screenOrientation="portrait" /> 
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Password_Page"
+            android:label="密码锁界面"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.GestureEditActivity"
+            android:label="设置手势密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.GestureVerifyActivity"
+            android:label="启动手势密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Login"
+            android:label="登录"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Register_Bankcard"
+            android:label="绑定银行卡"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Register_Basic"
+            android:label="填写基本信息"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Register_Password"
+            android:label="交易密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Register_Finish"
+            android:label="注册完成"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_SelfCenter"
+            android:label="个人中心"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Buy"
+            android:label="认购"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Deposit"
+            android:label="提现"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Recharge"
+            android:label="充值"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_RechargeVerify"
+            android:label="充值验证码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_RechargeSuc"
+            android:label="充值成功"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Recharge_Fail"
+            android:label="充值失败"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_FindPassword"
+            android:label="找回密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ResetPassword"
+            android:label="重设登录密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ChangePass"
+            android:label="修改登录密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Product"
+            android:label="产品信息"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ProductMore"
+            android:label="更多信息"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_FindExPass"
+            android:label="找回交易密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_SetNewExpass"
+            android:label="设置新的交易密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ResetExPass"
+            android:label="重设交易密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ChangeExPass"
+            android:label="修改交易密码"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ManagerDetail"
+            android:label="理财详情界面"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_MoneyDetail"
+            android:label="资金明细"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_TouziDetail"
+            android:label="投资明细"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_More"
+            android:label="更多"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Cancelbind"
+            android:label="取消绑定"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_PasswordMan"
+            android:label="密码管理"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ChangePhone"
+            android:label="修改手机"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ResetPhone"
+            android:label="修改绑定手机号"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Risk"
+            android:label="风险评估"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ReseachResult"
+            android:label="风险评估结果"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_ContactUs"
+            android:label="联系客服"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_AboutUs"
+            android:label="关于我们"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_OftenQuestion"
+            android:label="常见问题"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_PassQuestion"
+            android:label="设置密保问题"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_DepositeSuc"
+            android:label="提现成功"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_DepositeFail"
+            android:label="提现失败"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_BankData"
+            android:label="银行卡界面"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_CompanyInfo"
+            android:label="公司简介"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Suggestion"
+            android:label="意见反馈"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Notice"
+            android:label="公告界面"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_WebView"
+            android:label="html界面"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.nasilly.chuan_gold.activity.Activity_Pdfview"
+            android:label="pdf界面"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
